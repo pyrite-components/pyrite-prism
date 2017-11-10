@@ -1,0 +1,1 @@
+export {PrismCtrl as Prism} from './prism/PrismCtrl';
