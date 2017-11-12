@@ -2,3 +2,6 @@
 ./example
 ./dist
 ./lib/example
+./coverage
+./test
+.nyc_output
