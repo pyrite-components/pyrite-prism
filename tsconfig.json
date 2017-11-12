@@ -6,14 +6,15 @@
 		"strict": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"outDir": "./dist",
+		"declaration": true,
+		"outDir": "./lib",
 		"rootDir": ".",
 		"jsx": "react",
-		"jsxFactory": "Render",
-		"strictNullChecks": false
+		"jsxFactory": "Render"
 	},
 	"include": [
-		"./app"
+		"./src",
+		"./example"
 	],
 	"exclude": [
 		"node_modules"
