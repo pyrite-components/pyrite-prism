@@ -7,6 +7,7 @@ export class ExampleController extends Component<any>{
 		<div>
 			<h1>This is an example</h1>
 			<div>Diferent element</div>
+			<Prism language="html" code={this.exampleCode} />
 		</div>
 	`;
 }
