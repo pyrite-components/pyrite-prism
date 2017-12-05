@@ -1,4 +1,4 @@
-import { Render, core } from "pyrite";
+import { m } from "pyrite";
 import { ExampleController } from "./ExampleController";
 import { Prism } from "../../src";
 

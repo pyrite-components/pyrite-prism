@@ -1,10 +1,12 @@
-import { Component, Attributes, Children, core } from "pyrite";
+import { Component, m, Template } from "pyrite";
+import * as Prism from 'prismjs';
 import { PrismTemplate } from "./PrismTemplate";
 
-@Component(PrismTemplate)
-export class PrismController {
-    @Attributes attrs: {
-        language: string;
-        code: string;
-    };
+export interface PrismAttributes {
+    language: string;
+    code: string;
+}
+
+@Template(PrismTemplate)
+export class PrismController extends Component<PrismAttributes>{
 }

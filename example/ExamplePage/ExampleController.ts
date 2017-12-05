@@ -1,8 +1,8 @@
-import { Component, Attributes} from "pyrite";
+import { Component, Template} from "pyrite";
 import { ExampleTemplate } from './ExampleTemplate';
 
-@Component(ExampleTemplate)
-export class ExampleController {
+@Template(ExampleTemplate)
+export class ExampleController extends Component<any>{
 	exampleCode: string = `
 		<div>
 			<h1>This is an example</h1>

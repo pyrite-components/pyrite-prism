@@ -1,10 +1,10 @@
-import { Pyrite } from "pyrite";
+import { router, m } from "pyrite";
 
 import { ExamplePage } from "./ExamplePage";
 
-const pyrite = new Pyrite({
-	routes: [{
-		path: "/",
-		component: ExamplePage
-	}]
-});
+const configRoutes: any = [{
+	path: "/",
+	component: ExamplePage
+}];
+
+m.route(document.body, '/', router.build(configRoutes) as any);

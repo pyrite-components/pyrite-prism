@@ -1,15 +1,15 @@
-import { Render, core } from "pyrite";
+import { m } from "pyrite";
 import { PrismController } from "./PrismController";
 import * as Prism from 'prismjs';
 
 export function PrismTemplate(this: PrismController) {
-	const language = this.attrs.language || "html";
+	const language = this.props.language || "html";
 
-	const template = Prism.highlight(this.attrs.code, Prism.languages[language]);
+	const template = Prism.highlight(this.props.code, Prism.languages[language]);
 
     return (
 		<pre>
-    		<code class={"language-" + language}>{core.trust(template)}</code>
+    		<code class={"language-" + language}>{m.trust(template)}</code>
         </pre> 
 	);
 }

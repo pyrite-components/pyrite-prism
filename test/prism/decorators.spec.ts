@@ -12,7 +12,7 @@ describe('Prism Component', () => {
 			code: "<div>Example</div>",
 			key: 1,
 			oncreate: () => {
-				expect(component.state.attrs.code).to.not.be.undefined;
+				expect(component.state.props.code).to.not.be.undefined;
 				done();
 			}
 		});
@@ -47,7 +47,7 @@ describe('Prism Component', () => {
 				const className = element.getAttribute("class");
 
 				expect(className).to.equal("language-js");
-				expect(component.state.attrs.language).to.equal("js");
+				expect(component.state.props.language).to.equal("js");
 				
 				done();
 			}
