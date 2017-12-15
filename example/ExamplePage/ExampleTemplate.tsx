@@ -8,7 +8,7 @@ export function ExampleTemplate(this: ExampleController) {
 			<h2>Pyrite Prism example</h2>
 			<p>How use it:</p>
 
-			<Prism language="html" code={this.exampleCode} />
+			<Prism language="jsx" code={this.exampleCode} />
 
 			<div>
 				<h3>Attributes</h3>
