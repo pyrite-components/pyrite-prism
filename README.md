@@ -2,11 +2,11 @@
 
 ## How use it:
 
-```html
+```jsx
 <div>
     <h1>This is an example</h1>
     <div>Diferent element</div>
-    <Prism language="html" code={this.exampleCode} />
+    <Prism language="jsx" code={this.exampleCode} />
 </div>
 ```
 
