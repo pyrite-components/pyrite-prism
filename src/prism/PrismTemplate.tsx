@@ -28,7 +28,7 @@ import 'prismjs/components/prism-apacheconf.min';
 import 'prismjs/components/prism-bash.min';
 
 export function PrismTemplate(this: PrismController) {
-	const language = this.props.language || "html";
+	const language = this.props.language;
 
 	const template = Prism.highlight(this.props.code, Prism.languages[language]);
 
